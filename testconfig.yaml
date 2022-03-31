@@ -1,0 +1,8 @@
+blocked:
+  - from: foo/bar
+    to:
+      - foo
+  - from: foo/baz
+    to:
+      - foo/bar
+      - foo/qux.*
