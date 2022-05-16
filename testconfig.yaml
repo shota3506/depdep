@@ -1,8 +1,8 @@
 blocked:
-  - from: foo/bar
+  - from: ^foo/bar$
     to:
-      - foo
-  - from: foo/baz
+      - ^foo$
+  - from: ^foo/baz$
     to:
-      - foo/bar
+      - ^foo/bar$
       - foo/qux.*

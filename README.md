@@ -7,13 +7,13 @@ You can definde the rule in a yaml file like:
 
 ```yaml
 blocked:
-  - from: example\.com/foo
+  - from: ^example\.com/foo$
     to:
-      - example\.com/baz
-  - from: example\.com/foo
+      - ^example\.com/baz$
+  - from: ^example\.com/foo$
     to:
-      - example\.com/bar
-      - example\.com/qux.*
+      - ^example\.com/bar$
+      - ^example\.com/qux.*
 ```
 
 `depdep` reports the import declarations which violate the rule.
